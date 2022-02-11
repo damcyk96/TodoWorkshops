@@ -1,11 +1,13 @@
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView, Button} from 'react-native';
 import React from 'react';
 
 const AddTodo = () => {
+  console.log('DUPA');
   return (
-    <View>
-      <Text>AddTodo</Text>
-    </View>
+    <SafeAreaView style={{flex: 1}}>
+      <Text>DUPA DUPA DUPA</Text>
+      <Button title="dupa" />
+    </SafeAreaView>
   );
 };
 

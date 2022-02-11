@@ -1,12 +1,12 @@
 import React from 'react';
 import {FormControl, Box, Stack, Input, WarningOutlineIcon} from 'native-base';
 
-const InputForm = () => {
+const InputForm = ({label, type, defaultValue, placeholder}) => {
   return (
     <Box w="100%">
       <FormControl isRequired>
         <Stack mx="4">
-          <FormControl.Label>Password</FormControl.Label>
+          <FormControl.Label>{label}</FormControl.Label>
           <Input
             _light={{
               bg: 'coolGray.100',
@@ -18,9 +18,9 @@ const InputForm = () => {
               bg: 'coolGray.200',
             }}
             shadow={2}
-            type="password"
-            defaultValue="12345"
-            placeholder="password"
+            type={type}
+            defaultValue={defaultValue}
+            placeholder={placeholder}
           />
           <FormControl.HelperText>
             Must be atleast 6 characters.
